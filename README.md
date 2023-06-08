@@ -1,4 +1,4 @@
-# Book Summary Twitter Bot
+# AI-Powered Book Summary Twitter Bot with AWS
 
 This project is a Twitter bot that posts tweet summaries of books. It does so by leveraging AWS Lambda for scheduling and execution, an AWS S3 bucket for storage of book titles, AWS Systems Manager Parameter Store for secrets management, AWS CloudWatch for logging, and the OpenAI API for generating book summaries.
 
