@@ -2,6 +2,25 @@
 
 This project is a Twitter bot that posts tweet summaries of books. It does so by leveraging AWS Lambda for scheduling and execution, an AWS S3 bucket for storage of book titles, AWS Systems Manager Parameter Store for secrets management, AWS CloudWatch for logging, and the OpenAI API for generating book summaries.
 
+## Screenshots
+
+*(placeholder for screenshots)*
+
+Please replace this text with the actual screenshots of the project. Make sure to include visuals of both the AWS components and the resulting tweets posted on Twitter.
+
+## Diagram
+
+The following diagram describes the interaction between different components:
+
+```mermaid
+graph LR
+  S3(S3 Bucket) -- Stores book titles --> Lambda(AWS Lambda Function)
+  ParameterStore((Parameter Store)) -- Provides API Keys --> Lambda
+  CloudWatch(CloudWatch) -- Triggers Function --> Lambda
+  Lambda -- Requests Summary --> OpenAI(OpenAI API)
+  Lambda -- Posts Tweet --> Twitter(Twitter API)
+```
+
 ## Prerequisites
 
 Before you can deploy this project, you need:
@@ -48,25 +67,6 @@ Follow these steps to set up and run this project:
 
 - Make sure the role attached to the Lambda function has necessary permissions for the S3 bucket, CloudWatch Logs, and Systems Manager Parameter Store.
 - The OpenAI model used for generating book summaries is `text-davinci-003`. You can change this to any other model you prefer.
-
-## Diagram
-
-The following diagram describes the interaction between different components:
-
-```mermaid
-graph LR
-  S3(S3 Bucket) -- Stores book titles --> Lambda(AWS Lambda Function)
-  ParameterStore((Parameter Store)) -- Provides API Keys --> Lambda
-  CloudWatch(CloudWatch) -- Triggers Function --> Lambda
-  Lambda -- Requests Summary --> OpenAI(OpenAI API)
-  Lambda -- Posts Tweet --> Twitter(Twitter API)
-```
-
-## Screenshots
-
-*(placeholder for screenshots)*
-
-Please replace this text with the actual screenshots of the project. Make sure to include visuals of both the AWS components and the resulting tweets posted on Twitter.
 
 ## Resources
 
