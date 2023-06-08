@@ -82,4 +82,4 @@ This project is released under the MIT License. Please see the `LICENSE` file fo
 
 ## Support
 
-If you have any questions or run into any issues, please open an issue on this GitHub repository.com/s3
+If you have any questions or run into any issues, please open an issue on this GitHub repository.com
