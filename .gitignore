@@ -1,0 +1,5 @@
+Pipfile*
+package/**
+myenv/**
+package.zip
+requirements.txt
